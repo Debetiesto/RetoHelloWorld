@@ -5,28 +5,31 @@
  */
 package modelo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author 2dam
  */
-public class Usuario {
-    private int id;
+public class Usuario implements Serializable {
+
+    private int idU;
     private String nombre;
     private String password;
-    
-    public Usuario(int id, String nombre, String password) {
-        this.id = id;
-        this.nombre = nombre;
-        this.password = password;
-    }
-    
+    private String nombreReal;
+    private String apellido;
+    private String email;
+    private String direccion;
 
-    public int getId() {
-        return id;
+    public Usuario() {
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getIdU() {
+        return idU;
+    }
+
+    public void setIdU(int idU) {
+        this.idU = idU;
     }
 
     public String getNombre() {
@@ -45,8 +48,51 @@ public class Usuario {
         this.password = password;
     }
 
+    public String getNombreReal() {
+        return nombreReal;
+    }
+
+    public void setNombreReal(String nombreReal) {
+        this.nombreReal = nombreReal;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public Usuario(int idU, String nombre, String password, String nombreReal, String apellido, String email, String direccion) {
+        this.idU = idU;
+        this.nombre = nombre;
+        this.password = password;
+        this.nombreReal = nombreReal;
+        this.apellido = apellido;
+        this.email = email;
+        this.direccion = direccion;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", password=" + password + '}';
+        return "Usuario{" + "idU=" + idU + ", nombre=" + nombre + ", password=" + password + ", nombreReal=" + nombreReal + ", apellido=" + apellido + ", email=" + email + ", direccion=" + direccion + '}';
     }
+
 }
