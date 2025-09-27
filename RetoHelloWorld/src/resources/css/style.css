@@ -1,0 +1,13 @@
+
+.background
+{
+    -fx-background-image: url("../imagenes/login.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+}
+
+.background-usuario {
+    -fx-background-image: url("../imagenes/fondoUsu.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+}
