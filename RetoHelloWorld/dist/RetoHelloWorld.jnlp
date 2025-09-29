@@ -8,7 +8,11 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
     <jar href="RetoHelloWorld.jar" size="3585869" download="eager" />
+=======
+    <jar href="RetoHelloWorld.jar" size="3578337" download="eager" />
+>>>>>>> master
     <jar href="lib\mysql-connector-java-8.0.15.jar" size="2134905" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RetoHelloWorld" >
