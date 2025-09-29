@@ -16,14 +16,20 @@ import javafx.stage.Stage;
  * @author 2dam
  */
 public class Main extends Application {
-    
+
+    /**
+     * Iniciar la aplicación
+     * @param stage escenario principal de la aplicación
+     * @throws Exception si ocurre un error al cargar la vista
+     */
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/vista/FXMLDocument.fxml"));
-        
+        Parent root = FXMLLoader.load(getClass().getResource("/vista/VistaLogin.fxml"));
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
@@ -33,5 +39,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
